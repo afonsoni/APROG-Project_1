@@ -1,0 +1,17 @@
+package i;
+
+
+public class I {
+
+    
+    public static void main(String[] args) {
+       int a;
+       int d;
+       int h;
+       for(a=1; a<365, a++) do; 
+           //calcular médias de visitas do género masculino e feminino, e de clientes, qual dia houve mais visitas, horários mais frequentados, percentagens que solicitaram serviços de PT, quantos aderiram a cada um dos diferentes cartões, e montante auferido//
+           for(d=0; d<31, d++ ) do;
+                
+    }
+    
+}
