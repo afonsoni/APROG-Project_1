@@ -1,17 +1,39 @@
 package i;
-
-
 public class I {
 
     
+    
+   
     public static void main(String[] args) {
-       int a;
-       int d;
-       int h;
-       for(a=1; a<365, a++) do; 
-           //calcular mÈdias de visitas do gÈnero masculino e feminino, e de clientes, qual dia houve mais visitas, hor·rios mais frequentados, percentagens que solicitaram serviÁos de PT, quantos aderiram a cada um dos diferentes cartıes, e montante auferido//
-           for(d=0; d<31, d++ ) do;
+        int d;
+        int h;
+        int egg1;
+        int egg2;
+           //calcular medias de visitas do genero masculino e feminino, e de clientes, qual dia houve mais visitas, horarios mais frequentados, percentagens que solicitaram servicos de PT, quantos aderiram a cada um dos diferentes cartoes, e montante auferido//
+           for(d=1; d<3, d++); {
+                for(h=7; h<12, h++); {
+                    System.out.println("Manh√£");
+                }
+                for(h=12; h<17, h++); {
+                    System.out.println("Tarde");
+                }
+                //Agora n√£o pode ser como os outros For porque n√£o pode haver mais horas depois das 21h)//
+                for(h=17; h<=21) do;{
+                    System.out.println("Noite");
+                }
+                if(h>21) {
+                    System.out.println("O gin√°sio encontra-se fechado");
+                }
+                //easteregg//
+                while(h=420) {
+                    System.out.println("Smoke Weed Everyday");
+                } do;
+                while(h=24) {
+                    System.out.println("Bem vindo √†s aulas secretas do Gin√°sio Fitness. Aqui pode treinar as suas capacidades de drag√£o e de ninja simultaneamente, com o pai do Sr. Dr. H√©rcules (The God) God, Zeus o senhor Engenheiro e Carpinteiro de Ninjas do sudoeste.");
+                } do;     
+            }
+             
                 
     }
     
-}
+
