@@ -21,7 +21,7 @@ public class I {
 GymMembership (String memberName){
     name = memberName;
     frequency = 0;
-    description = ("Erro : Tipo de conta não especificado");
+    System.out.println("Erro : Tipo de conta não especificado");
 }
 public void comeToGym(int howMany){
     frequency += howMany;
@@ -112,8 +112,47 @@ class FabMembership extends GymMembership {
                 } do;     
             }
              
-                
+    class Gym {
+	public static void main (String args[])
+	{
+		FitMembership billGates = new FitMembership ("Nome Que Se Quer");
+		Nome Que Se Quer.buyYogurt(1);
+		Nome Que Se Quer.buyYogurt(29);
+		Nome Que Se Quer.comeToGym(41);
+		Nome Que Se Quer.buyYogurt(9);
+		Nome Que Se Quer.comeToGym(21);
+		Nome Que Se Quer.comeToGym(19);
+		Nome Que Se Quer.comeToGym(50);
+		float cost = Nome Que Se Quer.getTotalCharge();
+		System.out.println(Nome Que Se Quer.toString());
+		System.out.println("Total cost : $"  + GymMembership.costFormatter.format(cost));
+
+		FabMembership Nome Que Se Quer = new FabMembership ("Nome Que Se Quer");
+		Nome Que Se Quer.buyYogurt(21);
+		Nome Que Se Quer.buyYogurt(23);
+		Nome Que Se Quer.comeToGym(21);
+		Nome Que Se Quer.buyYogurt(19);
+		Nome Que Se Quer.comeToGym(11);
+		Nome Que Se Quer.comeToGym(9);
+		Nome Que Se Quer.comeToGym(5);
+		cost = Nome Que Se Quer.getTotalCharge();
+		System.out.println(Nome Que Se Quer.toString());
+		System.out.println("Total cost : $"  + GymMembership.costFormatter.format(cost));
+
+		FabMembership Nome Que Se Quer = new FabMembership ("Nome Que Se Quer");
+		Nome Que Se Quer.buyYogurt(91);
+		Nome Que Se Quer.comeToGym(231);
+		Nome Que Se Quer.comeToGym(135);
+		Nome Que Se Quer.buyYogurt(84);
+		Nome Que Se Quer.comeToGym(160);
+		Nome Que Se Quer.comeToGym(70);
+		cost = Nome Que Se Quer.getTotalCharge();
+		System.out.println(Nome Que Se Quer.toString());
+		System.out.println("Total cost : $"  + GymMembership.costFormatter.format(cost));
+	}
+}            
     }
+}
 }
 
 
