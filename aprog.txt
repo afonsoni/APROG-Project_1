@@ -1,16 +1,95 @@
 package i;
-public class I {
-
-    
-    
-   
+public class I {   
     public static void main(String[] args) {
+    public String Description; //Type of Card//
+    public String id; //member's id//
+    public String name; //member's name//
+    public int frequency; //member's frequency in the gym//
+    public static DecimalFormat idFormatter = new DecimalFormat("000000");
+    public static DecimalFormatter = new DecimalFormat("####.00");
         int d;
         int h;
         int egg1;
         int egg2;
-           //calcular medias de visitas do genero masculino e feminino, e de clientes, qual dia houve mais visitas, horarios mais frequentados, percentagens que solicitaram servicos de PT, quantos aderiram a cada um dos diferentes cartoes, e montante auferido//
-           for(d=1; d<3, d++); {
+        int grupo;
+        int Ioga;
+        int Pilates;
+        int Zumba;
+        int Step;
+        int musculacao;
+        int pt;
+GymMembership (String memberName){
+    name = memberName;
+    frequency = 0;
+    description = ("Erro : Tipo de conta não especificado");
+}
+public void comeToGym(int howMany){
+    frequency += howMany;
+}
+public String toString(){
+    return "\nMember :" + name + "\n" +
+            "ID : " + id + "\n" + 
+            "Type : " + description + "\n" +
+            "Mean Frequency/Week : " + frequency/52f + "\n" +
+            }
+class FitMembership extends GymMembership {
+	
+	private static int lastId = 0;
+}
+FitMembership(String memberName)
+	{
+		super(memberName);
+		id = generateNewId();
+		description = "Fit";
+	}
+public String generateNewId()
+	{
+		lastId ++;
+		return idFormatter.format(lastId);
+	}
+public float getTotalCharge()
+	{
+		float sum = 250;  // yearly fee
+		float meanFreq = frequency/52f;
+		if (meanFreq < 4) 
+			sum += 20*12;  // extra charge
+
+		sum += (numOfYogurt * 0.75 * YOGURT_PRICE);
+		return sum;
+	}
+class FabMembership extends GymMembership {
+	
+	public static int lastId = 500000;
+
+	FabMembership(String memberName)
+	{
+		super(memberName);
+		id = generateNewId();
+		description = "Fab";
+	}
+
+	public String generateNewId()
+	{
+		lastId ++;
+		return idFormatter.format(lastId);
+	}
+
+	public float getTotalCharge()
+	{
+		float sum = 100;  
+		float meanFreq = frequency/52f;
+		if (meanFreq > 3) 
+			sum += 25*12; 
+	}
+
+
+//calcular medias de visitas do genero masculino e feminino, e de clientes, qual dia houve mais visitas, horarios mais frequentados, percentagens que solicitaram servicos de PT, quantos aderiram a cada um dos diferentes cartoes, e montante auferido//
+           
+        
+        
+        
+        //Time Table Part://
+        for(d=1; d<3, d++); {
                 for(h=7; h<12, h++); {
                     System.out.println("Manhã");
                 }
@@ -35,7 +114,8 @@ public class I {
              
                 
     }
-    
+}
+
 
 
 
