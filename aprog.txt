@@ -37,3 +37,7 @@ public class I {
     }
     
 
+
+
+
+//////////////http://www.cs.cornell.edu/courses/cs100/1999su/P2%20Solutions/Gym.java.html////////////////////////
