@@ -160,3 +160,70 @@ class FabMembership extends GymMembership {
 
 
 //////////////http://www.cs.cornell.edu/courses/cs100/1999su/P2%20Solutions/Gym.java.html////////////////////////
+
+
+
+
+
+
+package iii;
+
+import java.util.Scanner;
+
+
+public class Iii {
+
+    
+    public static void main(String[] args) {
+        int Option;
+        String str1 = "Cliente";
+        String str2 = "Visitante";
+        String s1 = "Name"; 
+        String s2 = "Name2";
+        String s3 = "Acesso de um dia por Semana";
+        String s4 = "Acesso de Acesso de apenas uma vez por dia";
+        String s5 = "Acesso livre";
+        Scanner keyboard = new Scanner(System.in);
+            System.out.println("Bem vindo ao Ginásio Fitness Dragão-Ninja. É a sua primeira vez aqui?");
+            System.out.println("1. Sim");
+            System.out.println("2. Não");
+            Option = keyboard.nextInt();
+            
+            switch (Option) {
+                case 1: 
+                      System.out.println(str1);
+                    
+        //String Name = "Cliente";
+                    break;
+                case 2:
+                    System.out.println(str2);
+      //  String Name2 = "Visitante";
+                    break;
+        Scanner keyboard = new Scanner(System.in);
+            System.out.println("Qual é o seu tipo de Cartão?");
+            System.out.println("1. BásicoDourado");
+            System.out.println("2. Prateado");
+            System.out.println("3. Dourado");
+            Option = keyboard.nextInt();
+            
+            switch (Option) {
+                case 1: 
+                      System.out.println(str3);
+                    
+        //String Name = "Cliente";
+                    break;
+                case 2:
+                    System.out.println(str4);
+      //  String Name2 = "Visitante";
+                    break;
+                case 3:
+                    System.out.println(str5);
+      //  String Name2 = "Visitante";
+                    break;
+    }
+    }
+    
+}
+}
+
+///https://stackoverflow.com/questions/3652369/java-string-declaration///
